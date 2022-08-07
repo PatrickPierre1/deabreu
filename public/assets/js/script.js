@@ -11,10 +11,10 @@ iconMenu.addEventListener('click', ()=>{
     if(menuArea.style.width == '80vw'){
         menuArea.style.width = '0vw';
         menuItem.style.display = 'none';
-        iconMenuImg.setAttribute('src', '/public/assets/images/mobilehamburguer.png');
+        iconMenuImg.setAttribute('src', 'public/assets/images/mobilehamburguer.png');
     }else {
         menuArea.style.width = '80vw'
         menuItem.style.display = 'flex';
-        iconMenuImg.setAttribute('src', '/public/assets/images/mobileclose.png');
+        iconMenuImg.setAttribute('src', 'public/assets/images/mobileclose.png');
     }
 });
