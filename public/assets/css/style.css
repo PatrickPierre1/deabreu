@@ -27,18 +27,34 @@ body {
     margin-bottom: 0!important;
 }
 .header-nav ul li a{
-    color: inherit;
     text-decoration: none;
     color: #ACACAC;
     font-size: 1.1rem;
-    border-bottom: 2px solid #000
+    background-image: 
+    linear-gradient(
+        transparent 0%,
+        transparent 90%,
+        #e6b43e 90%,
+        #e6b43e 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position: right;
+
+    transition: background-size 400ms;
+
+    padding-bottom: 5px;
 }
 .header-nav ul li a:hover {
-    color: #CCC;
-    border-bottom: 2px solid var(--bs-yellow);
-    transition: all ease 0.2s;
+    background-size: 100% 100%;
+    background-position: left;
 }
-
+.header-mobile{
+    display: none;
+}
+.header-mobile--nav{
+    display: none;
+}
 
 .section-banner {
     width: 100vw;
@@ -71,11 +87,30 @@ body {
 .bg-opacity1:hover,
 .bg-opacity2:hover {
     transition: all ease 0.5s;
-    background-color: rgba(0,0,0, 0.2);
+    background-color: rgba(0,0,0, 0.3);
     cursor: pointer;
     color: var(--bs-white);
     font-size: 50px;
 }
+.bg-text {
+    background-image: 
+    linear-gradient(
+        transparent 0%,
+        transparent 90%,
+        #e6b43e 90%,
+        #e6b43e 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position: right;
+
+    transition: background-size 300ms;
+}
+.bg-text:hover {
+    background-size: 100% 100%;
+    background-position: left;
+}
+
 
 
 .content {
@@ -84,7 +119,14 @@ body {
 }
 .content h3 {
    font-size: 20px;
+   cursor: default;
 
+}
+.background-black {
+    background-image: url('/public/assets/media/bgblack.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -93,7 +135,160 @@ body {
 
 .footer {
     width: 100vw;
-    height: 20vh;
+    height: 18vh;
     background-color: #000;
 }
+.footer-container{
+    width: 100%;
+    height: 100%;
+}
+.footer-area {
+}
+.footer-logo img{
+    width: 200px;
+}
 
+.footer-sociais--icon img {
+    width: 24px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.footer-sociais--title{
+    margin-bottom: 5px;
+}
+.footer-sociais--title span {
+    font-size: 17px;
+    cursor: default;
+}
+
+
+
+
+
+
+
+aside {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+}
+.ballon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 42px;
+    margin: 30px;
+    border-radius: 30px;
+    background-color: #22c15e;
+    border-radius: 40px;
+}
+.ballon:hover {
+    background-color: #22a15e;
+    transition: all ease 0.3s;
+}
+.ballon-icon img {
+    width: 40px;
+}
+.ballon-text {
+    padding-left: 5px;
+}
+/*
+Mobile header
+*/
+.header-mobile--nav {
+    width: 80vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0,0,0, 0.9);
+    left: 0;
+    top: 0;
+    transition: all ease 500ms;
+}
+
+
+/*Media*/
+
+@media (max-width: 768px) {
+    .footer {
+        height: auto;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    .footer-address {
+        margin-top: 10px;
+        justify-content: start!important;
+    }
+    .footer-address ul{
+        padding-left: 0!important;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .header-nav--area.nav-default-none{
+        display: none;
+    }
+
+    .header-mobile{
+        display: flex;
+    }
+    .header-mobile--nav{
+        display: flex;
+    }
+    .header-nav--area{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-mobile--nav .header-nav ul li a{
+        font-size: 30px;
+
+    }
+
+
+    .leftside,
+    .rightside {
+        flex: auto;
+    }
+
+    .content h3{
+        font-size: 17px;
+        text-align: center;
+    }
+    
+
+
+    .footer {
+        height: auto;
+        padding: 15px;
+    }
+    .footer-area {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .footer-sociais {
+        margin-bottom: 15px;
+    }
+    .footer-sociais--title{
+        display: none;
+    }
+
+    aside .ballon{
+        width: 60px;
+    }
+    .ballon-text{
+        display: none;
+    }
+}

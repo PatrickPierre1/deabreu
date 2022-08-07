@@ -5,17 +5,17 @@
         <title>De abreu Terraplanagem</title>
         <link rel="stylesheet" href="/public/assets/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="/public/assets/css/style.css"/>
-        <link rel="shortcut icon" type="imagex/png" href="./images/icon.ico">
+        <link rel="shortcut icon" type="imagex/png" href="/public/assets/images/abreu.ico">
         <meta id="viewport" name="viewport" content="width=device-width, user-scalable=0">
         
     </head>
 <body>
-    <header class="header d-flex align-items-center">
+    <header id="homepage" class="header d-flex align-items-center">
         <div class="container header-container">
             <div class="logo">
                 <img src="/public/assets/images/logodeabreu.png" alt="logo">
             </div>
-            <div class="header-nav--area">
+            <div class="header-nav--area nav-default-none">
                 <nav class="header-nav">
                     <ul class="d-flex">
                         <li class="px-3"><a href="#">Serviços</a></li>
@@ -25,21 +25,40 @@
                     </ul>
                 </nav>
             </div>
+            <div class="header-mobile">
+                <div class=""><img src="/public/assets/images/mobilehamburguer.png" alt=""></div>
+            </div>
+        </div>
+        <div class="header-mobile--nav" style="width: 0vw">
+            <div class="header-nav--area">
+                <nav class="header-nav mobile-item" style="display: none;">
+                    <ul class="d-flex flex-column">
+                        <li class="px-2"><a href="#"><span style="color: goldenrod;">&#9656;</span> Serviços</a></li>
+                        <li class="px-2"><a href="#"><span style="color: goldenrod;">&#9656;</span> Sobre</a></li>
+                        <li class="px-2"><a href="#"><span style="color: goldenrod;">&#9656;</span> Contato</a></li>
+                        <li class="px-2"><a href="#"><span style="color: goldenrod;">&#9656;</span> Orçamentos</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <section>
             <div class="row section-banner">
                 <div class="col leftside">
-                    <div class="bg-opacity1 d-flex justify-content-center align-items-center">Contato</div>
+                    <div class="bg-opacity1 d-flex justify-content-center align-items-center">
+                        <span class="bg-text">Contato</span>
+                    </div>
                 </div>
                 <div class="col rightside">
-                    <div class="bg-opacity2 d-flex justify-content-center align-items-center">Orçamentos</div>
+                    <div class="bg-opacity2 d-flex justify-content-center align-items-center">
+                        <span class="bg-text">Orçamentos</span>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <section>
+    <section class="background-black">
         <div class="container">
             <div class="content d-flex justify-content-center align-items-center">
                 <h3>
@@ -49,8 +68,55 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="container"></div>
+        <div class="container footer-container d-flex align-items-center">
+            <div class="row footer-area w-100 d-flex justify-content-between">
+                
+                <div class="col footer-logo">
+                    <a href="#homepage">
+                        <img src="/public/assets/images/logodeabreu.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col footer-sociais d-flex justify-content-start flex-column align-items-center">
+                    <div class="footer-sociais--title">
+                        <span>Redes Sociais</span>
+                    </div>
+                    <div class="footer-sociais--area d-flex">
+                        <div class="footer-sociais--icon">
+                            <a href="https://www.facebook.com/deabreu.terraplanagem" target="_blank"><img src="/public/assets/images/iconfbwhite.png" alt=""></a>
+                        </div>
+                        <div class="footer-sociais--icon">
+                            <a href="https://api.whatsapp.com/send?phone=5541999084504&text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20um%20or%C3%A7amento%20para%20um%20servi%C3%A7o.%20" target="_blank"><img src="/public/assets/images/iconwppwhite.png" alt=""></a>
+                        </div>
+                        <div class="footer-sociais--icon">
+                            <a href="https://www.instagram.com/terraplanagemdeabreu/" target="_blank" ><img src="/public/assets/images/iconinstawhite.png" alt=""></a>
+                        </div>
+                        <div class="footer-sociais--icon">
+                            <a href="mailto:contato@deabreuterraplanagem.com.br" target="_blank"><img src="/public/assets/images/iconemailwhite.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col footer-address d-flex justify-content-center">
+                    <ul style="list-style: none;">
+                        <li>contato@deabreuterraplanagem.com.br</li>
+                        <li>Rua Sérgio Zanatto, nº 3846, Umuarama/PR</li>
+                        <li>Brasil, CEP 87511-006</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
+    <aside>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=5541999084504&text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20um%20or%C3%A7amento%20para%20um%20servi%C3%A7o.%20" style="text-decoration: none;">
+            <div class="ballon">
+                <div class="ballon-icon">
+                    <img src="/public/assets/images/wppicon.png" alt="wpp-logo">
+                </div>
+                <div class="ballon-text">
+                    <span>Olá, Fale conosco</span>
+                </div>
+            </div>
+        </a>
+    </aside>
     <script type="text/javascript" src="/public/assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="/public/assets/js/script.js"></script>
 </body>
