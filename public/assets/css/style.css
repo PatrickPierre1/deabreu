@@ -134,7 +134,7 @@ body {
     height: 80vh;
 }
 .carousel-slide--1 {
-    background-image: url('/public/assets/media/manilhas.jpg');
+    background-image: url('/deabreu/public/assets/media/manilhas.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -142,14 +142,14 @@ body {
 }
 
 .carousel-slide--2 {
-    background-image: url('/public/assets/media/terraplanagem.jpg');
+    background-image: url('/deabreu/public/assets/media/terraplanagem.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
 }
 .carousel-slide--3 {
-    background-image: url('/public/assets/media/loteamento.jpg');
+    background-image: url('/deabreu/public/assets/media/loteamento.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -225,7 +225,7 @@ body {
 }
 
 .contato-background{
-    background-image: url('/public/assets/media/banner3.jpg');
+    background-image: url('/deabreu/public/assets/media/banner3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -241,7 +241,7 @@ body {
 }
 
 .localizacao-background{
-    background-image: url('/public/assets/media/bannermapa.jpg');
+    background-image: url('/deabreu/public/assets/media/bannermapa.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

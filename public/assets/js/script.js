@@ -21,6 +21,6 @@ iconMenu.addEventListener('click', ()=>{
 function closeMenu() {
     menuArea.style.width = '0vw';
     menuItem.style.display = 'none';
-    iconMenuImg.setAttribute('src', 'public/assets/images/mobilehamburguer.png');
+    iconMenuImg.setAttribute('src', '/deabreu/public/assets/images/mobilehamburguer.png');
 }
 //
