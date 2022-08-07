@@ -18,3 +18,9 @@ iconMenu.addEventListener('click', ()=>{
         iconMenuImg.setAttribute('src', 'public/assets/images/mobileclose.png');
     }
 });
+function closeMenu() {
+    menuArea.style.width = '0vw';
+    menuItem.style.display = 'none';
+    iconMenuImg.setAttribute('src', 'public/assets/images/mobilehamburguer.png');
+}
+//

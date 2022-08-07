@@ -115,7 +115,7 @@ body {
 
 .content {
     width: 100%;
-    height: 15vh;
+    height: 17vh;
 }
 .content h3 {
    font-size: 20px;
@@ -129,7 +129,130 @@ body {
     background-repeat: no-repeat;
 }
 
+.section-carousel{
+    width: 100%;
+    height: 80vh;
+}
+.carousel-slide--1 {
+    background-image: url('/public/assets/media/manilhas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
 
+.carousel-slide--2 {
+    background-image: url('/public/assets/media/terraplanagem.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.carousel-slide--3 {
+    background-image: url('/public/assets/media/loteamento.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.carousel-slide--1 h3,
+.carousel-slide--2 h3,
+.carousel-slide--3 h3 {
+    font-size: 3rem;
+    color: #FFF;
+    cursor: default;
+}
+.carousel-slide--1 span,
+.carousel-slide--2 span,
+.carousel-slide--3 span {
+    font-size: 1.5rem;
+    color: #FFF;
+    cursor: default;
+    text-align: center;
+}
+
+
+
+
+.section-sobre {
+    width: 100%;
+    height: auto;
+}
+.section-sobre--title h4{
+    font-size: 2rem;
+    cursor: default;
+}
+.title-bar{
+    width: 150px;
+    background-color: #e6b43e;
+    height: 3px;
+}
+
+.section-sobre--description{
+    font-size: 1.3rem;
+}
+
+.funcionarios-area{
+    background-color: #FFF;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    padding: 30px;
+}
+.avatar-area img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.funcionario-nome span{
+    color: #212121;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.funcionario-cargo span {
+    color: #e6b43e;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.funcionario-descricao {
+    text-align: center;
+}
+.funcionario-descricao span {
+    color: #000;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.contato-background{
+    background-image: url('/public/assets/media/banner3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+}
+.contato-background h3 {
+    font-size: 3rem;
+    color: #FFF;
+    font-weight: bold;
+    background-color: rgba(0,0,0, 0.7);
+    padding: 15px 20px 15px 20px;
+    border-radius: 15px;
+}
+
+.localizacao-background{
+    background-image: url('/public/assets/media/bannermapa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25vh;
+}
+
+
+
+.form-area{
+    
+}
 
 
 
@@ -211,6 +334,19 @@ Mobile header
 /*Media*/
 
 @media (max-width: 768px) {
+    .section-contato {
+        justify-content: space-between!important;
+        padding: 20px!important;
+    }
+    .section-contato span {
+        font-size: 0.8rem;
+    }
+    .contato-email {
+        width: auto!important;
+    }
+
+
+
     .footer {
         height: auto;
     }
@@ -261,7 +397,57 @@ Mobile header
         font-size: 17px;
         text-align: center;
     }
+
+    .carousel-slide--1 h3,
+    .carousel-slide--2 h3,
+    .carousel-slide--3 h3 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    .carousel-slide--1 span,
+    .carousel-slide--2 span,
+    .carousel-slide--3 span {
+        font-size: 1.2rem;
+    }
+
+
+    .section-sobre--funcionarios .row {
+        display: block;
+
+    }
+    .section-sobre--funcionarios .row .col {
+        margin-bottom: 15px;
+    }
+    .contato-background h3 {
+        font-size: 2.3rem;
+    }
     
+
+    .section-contato {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contato-endereco{
+        margin-bottom: 10px;
+    }
+    .contato-email{
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .contato-telefone {
+        width: auto;
+    }
+    .orcamento-title{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .orcamento-title .title-bar {
+        width: 200px!important;
+    }
+    .form-area{
+        width: 100%!important;
+    }
+
 
 
     .footer {
