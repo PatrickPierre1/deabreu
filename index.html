@@ -18,10 +18,10 @@
             <div class="header-nav--area nav-default-none">
                 <nav class="header-nav">
                     <ul class="d-flex">
-                        <li class="px-3"><a href="#">Serviços</a></li>
-                        <li class="px-3"><a href="#">Sobre</a></li>
-                        <li class="px-3"><a href="#">Contato</a></li>
-                        <li class="px-3"><a href="#">Orçamentos</a></li>
+                        <li class="px-3"><a href="#serviços">Serviços</a></li>
+                        <li class="px-3"><a href="#sobre">Sobre</a></li>
+                        <li class="px-3"><a href="#contato">Contato</a></li>
+                        <li class="px-3"><a href="#orcamento">Orçamentos</a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,10 +33,10 @@
             <div class="header-nav--area">
                 <nav class="header-nav mobile-item" style="display: none;">
                     <ul class="d-flex flex-column">
-                        <li class="px-2"><a href="#"><span style="color: goldenrod;">&#9656;</span> Serviços</a></li>
-                        <li class="px-2"><a href="#"><span style="color: goldenrod;">&#9656;</span> Sobre</a></li>
-                        <li class="px-2"><a href="#"><span style="color: goldenrod;">&#9656;</span> Contato</a></li>
-                        <li class="px-2"><a href="#"><span style="color: goldenrod;">&#9656;</span> Orçamentos</a></li>
+                        <li onclick="closeMenu()" class="px-2"><a href="#serviços"><span style="color: goldenrod;">&#9656;</span> Serviços</a></li>
+                        <li onclick="closeMenu()" class="px-2"><a href="#sobre"><span style="color: goldenrod;">&#9656;</span> Sobre</a></li>
+                        <li onclick="closeMenu()" class="px-2"><a href="#contato"><span style="color: goldenrod;">&#9656;</span> Contato</a></li>
+                        <li onclick="closeMenu()" class="px-2"><a href="#orcamento"><span style="color: goldenrod;">&#9656;</span> Orçamentos</a></li>
                     </ul>
                 </nav>
             </div>
@@ -46,27 +46,168 @@
         <section>
             <div class="row section-banner">
                 <div class="col leftside">
-                    <div class="bg-opacity1 d-flex justify-content-center align-items-center">
-                        <span class="bg-text">Contato</span>
-                    </div>
+                    <a class="text-decoration-none" href="#servicos">
+                        <div class="bg-opacity1 d-flex justify-content-center align-items-center">
+                            <span class="bg-text">Serviços</span>
+                        </div>
+                    </a>
                 </div>
                 <div class="col rightside">
-                    <div class="bg-opacity2 d-flex justify-content-center align-items-center">
-                        <span class="bg-text">Orçamentos</span>
+                    <a class="text-decoration-none" href="#orcamento">
+                        <div class="bg-opacity2 d-flex justify-content-center align-items-center">
+                            <span class="bg-text">Orçamentos</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="background-black">
+            <div class="container">
+                <div class="content d-flex justify-content-center align-items-center">
+                    <h3>
+                        A máquina que você precisa está mais perto do que você imagina.
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <section id="serviços">
+                <div class="section-carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="carousel-slide--1 d-flex justify-content-center align-items-center flex-column">
+                                <h3>Drenagem com Tubo de Concreto</h3>
+                                <span>Sistema de Drenagem e manejo de águas pluviais urbanas.</span>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="carousel-slide--2 d-flex justify-content-center align-items-center flex-column">
+                                <h3>Terraplanagem</h3>
+                                <span>Escavação consiste na retirada de solo de um determinado terreno ou área com objetivo de chegar a profundidade.</span>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="carousel-slide--3 d-flex justify-content-center align-items-center flex-column">
+                                <h3>Infraestrutura</h3>
+                                <span>Serviços de infraestrutura de loteamentos, condomínios Residenciais, Comerciais e Industriais.</span>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+        </section>
+        <section id="sobre">
+            <div class="container section-sobre p-3">
+                <div class="section-sobre-area d-flex flex-column align-items-around">
+                    <div class="section-sobre--title d-flex justify-content-center flex-column align-items-center py-2">
+                        <h4>Sobre nós</h4>
+                        <div class="title-bar"></div>
+                    </div>
+                    <div class="section-sobre--description text-center">
+                        <span>Nós a De Abreu Terraplanagem atuamos no mercado a mais de 25 anos oferecendo soluções especializadas no ramo de Terraplanagem, Drenagem, Limpeza de terrenos, Escavações e preparação de áreas industriais.</span>
+                    </div>
+                    <div class="section-sobre--funcionarios d-flex justify-content-center py-5">
+                        <div class="row">
+                            <div class="col">
+                                <div class="funcionarios-area d-flex flex-column align-items-center justify-content-around">
+                                    <div class="funcionario-avatar">
+                                        <div class="avatar-area">
+                                            <img draggable="false" src="/public/assets/media/perfil1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="funcionario-nome">
+                                        <span>José de Abreu</span>
+                                    </div>
+                                    <div class="funcionario-cargo">
+                                        <span>Dono e Operador</span>
+                                    </div>
+                                    <div class="funcionario-descricao">
+                                        <span>José trabalha no ramo de terraplanagem a mais de 25 anos com muita experiência.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="funcionarios-area d-flex flex-column align-items-center justify-content-around">
+                                    <div class="funcionario-avatar">
+                                        <div class="avatar-area">
+                                            <img draggable="false" src="/public/assets/media/perfil2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="funcionario-nome">
+                                        <span>Jean Leonardo</span>
+                                    </div>
+                                    <div class="funcionario-cargo">
+                                        <span>Operador</span>
+                                    </div>
+                                    <div class="funcionario-descricao">
+                                        <span>Jean trabalha no ramo de terraplanagem a 7 anos.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-    <section class="background-black">
-        <div class="container">
-            <div class="content d-flex justify-content-center align-items-center">
-                <h3>
-                    A máquina que você precisa está mais perto do que você imagina.
-                </h3>
+        <section id="contato">
+            <div class="contato-background d-flex justify-content-center align-items-center">
+                <h3>Entre em Contato</h3>
             </div>
-        </div>
-    </section>
+            <div class="container section-contato p-5 d-flex justify-content-around">
+                <div class="contato-endereco d-flex">
+                    <div class="d-flex flex-column align-items-center">
+                        <img style="width:50px; padding-bottom: 15px;" src="/public/assets/images/contato-localizacao.png" alt="">
+                        <span>Rua Sérgio Zanatto, nº 3846, Umuarama/PR<br/>Brasil, CEP 87511-006</span>
+                    </div>
+                </div>
+                <div class="contato-email w-25">
+                    <div class="d-flex flex-column align-items-center">
+                        <img style="width:50px; padding-bottom: 15px;" src="/public/assets/images/contato-email.png" alt="">
+                        <span>contato@deabreuterraplanagem.com.br</span>
+                    </div>
+                </div>
+                <div class="contato-telefone w-25">
+                    <div class="d-flex flex-column align-items-center">
+                        <img style="width:50px; padding-bottom: 15px;" src="/public/assets/images/contato-telefone.png" alt="">
+                        <span>(41) 9 9908-4504<br/>(44) 9 9878-3273</span>
+                    </div>
+                </div>
+            </div>
+            <div class="localizacao-background"></div>
+        </section>
+        <section id="orcamento">
+            <div class="container p-5">
+                <div class="orcamento-title d-flex justify-content-center flex-column align-items-center">
+                    <h4 style="font-size: 1.7rem;">Solicite o seu orçamento</h4>
+                    <div style="width: 310px;" class="title-bar"></div>
+                </div>
+                <div class="section-form d-flex justify-content-center w-100">
+                    <form class="form-area w-50" method="POST">
+                        <input class="form-control my-3" type="text" name="name" placeholder="Nome">
+                        <input class="form-control my-3" type="email" name="email" placeholder="E-mail">
+                        <input class="form-control my-3" type="text" name="telefone" placeholder="Telefone">
+                        <div class="d-grid gap-2">
+                            <input style="background-color: #e6b43e" class="btn btn-dark disabled" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
     <footer class="footer">
         <div class="container footer-container d-flex align-items-center">
             <div class="row footer-area w-100 d-flex justify-content-between">
